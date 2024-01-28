@@ -11,6 +11,7 @@ run npm install
 run npm run dev
 
 To access the webpage, click the link below:
+https://phi-portfolio.netlify.app/
 
 
 ## Usage
