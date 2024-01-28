@@ -12,7 +12,6 @@ run npm run dev
 
 To access the webpage, click the link below:
 
-https://phipham0.github.io/phipham-challenge-2/
 
 ## Usage
 
