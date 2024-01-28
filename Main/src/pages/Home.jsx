@@ -1,14 +1,13 @@
 import React from 'react'
-import logo from '../assets/phi_pham_headshot_slack.jpg'
+import logo from '/images/phi_pham_headshot_slack.jpg'
 const Home = () => {
   
 
   return (
     <div className="card bg-white w-100">
-      <div className="card-header bg-white text-center">
-        <h1 className="bg-white">About Me</h1>
-      </div>
-      <div>
+
+      <h1 className="bg-white m-5">About Me</h1>
+      <div className='card-body m-5'>
         <img width='200'src={logo}></img>
       </div>
       <div className="card-body m-5 text-left">

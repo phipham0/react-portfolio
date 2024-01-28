@@ -2,13 +2,14 @@ import React, {  useState, useEffect } from "react";
  
 function Contact() {
  
-    const [formvalue, setFormvalue]= useState({ name:'',email:'',address:''});
+    const [formvalue, setFormvalue]= useState({ name:'',email:'',message:''});
     const [formerror, setFormerror] = useState({});
     const [issubmit, setSubmit]= useState(false);
  
     const handlevalidation =(e)=>{
         const {name, value}= e.target;
         setFormvalue({...formvalue, [name]: value});
+        
     }
     const handlesubmit= (e)=>{
         e.preventDefault();
@@ -29,8 +30,8 @@ function Contact() {
         {
             errors.email="Enter Valid Email";
         }
-        if(!value.address){
-            errors.address="Please Enter Address";
+        if(!value.message){
+            errors.message="Please Enter Message";
         }
  
         return errors;
@@ -44,7 +45,7 @@ function Contact() {
     },[formerror, formvalue, issubmit]);
      
  return (
-    <div className="bg-white container">
+    <div className="bg-white container m-5" onClick={handlesubmit}>
 
 
         <form className="bg-white" onSubmit={ handlesubmit } >
@@ -68,8 +69,8 @@ function Contact() {
             <div className="mb-4">
                 <label className="col-form-label">Message</label>
                 <div className="col-sm-5">
-                <textarea  className="form-input" name="address" value={ formvalue.address} onChange={ handlevalidation}   />
-                <span className="text-danger">{ formerror.address}  </span>
+                <textarea  className="form-input" name="message" value={ formvalue.message} onChange={ handlevalidation}   />
+                <span className="text-danger">{ formerror.message}  </span>
                 </div>
             </div>
 
