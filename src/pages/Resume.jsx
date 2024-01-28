@@ -8,7 +8,7 @@ const Resume = () => {
       </div>
 
       <div className="card-body m-5 text-left">
-        <h2><a href='../assets/Pham_Phi_Resume.pdf' download>Resume</a></h2>
+        <h2><a href='/Pham_Phi_Resume.pdf' download>Resume</a></h2>
         <h2>Front-end Proficiencies</h2>
         <p>
           <ul>

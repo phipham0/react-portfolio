@@ -12,7 +12,7 @@ function App() {
         <Outlet />
       </div>
       
-      <footer class='footer'>
+      <footer>
         <SimpleBottomNavigation />
       </footer>
     </div>
